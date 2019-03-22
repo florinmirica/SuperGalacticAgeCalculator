@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Supe Galactic Age Calculator</title>
-  </head>
-  <body>
-    <div class="container">
-      <h3>Galactic Calculator!</h3>
-      <form id="calculator-form" method="submit">
-        <label for="date">Enter a Date:</label>
-        <input id="theDate" type="date" name="date">
-        <hr>
-        <button type="submit">Submit</button>
-      </form>
+
+<head>
+
+  <title>Super Galactic Age Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Calculate your age on different planets</h3>
+    <form id="input" class="form-group">
+      <label>Date of Birth</label>
+      <input type="date" id="inputDOB">
+      <label>Average Life Expectancy</label>
+      <input type="number" id="inputExpectancy">
+
+      <button type="submit" class="btn btn-success">Calculate</button>
+    </form>
+    <div>
+      <h4>Earth</h4>
+      <p id="earthAge">Age: </p>
+      <p id="earthLeft">Years left:</p>
     </div>
-    <div id="output">
-    </div>
-  </body>
-</html>
+    <div class="row">
+      <div class="col">
+        <h4>Mercury</h4>
+        <p id="mercuryAge">Age: </p>
+        <p id="mercuryLeft">Years left:</p>
+      </div>
