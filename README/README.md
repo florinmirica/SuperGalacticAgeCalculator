@@ -1,39 +1,40 @@
-# _Epic Hair Salon_
+# _SuperInterGalactic_Age_Calculator_
 #### By _**Florin Mirica**_
-GitHub link: https://github.com/florinmirica/HairSalon.Solution.git
+GitHub link: https://github.com/florinmirica/SuperGalacticAgeCalculator.git
 
 ## Description
 
-_Hair Salon is a web app where the user will be able to add a stylist, specialist and a client to the database. You will be able to assign a client to a employee, specialties etc._
+_A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. This app lets you calculate your age and expected remaining days to live_
 ## Setup/Installation Requirements
 
 * Clone this repository by using Terminal command:
-    $ git clone https://github.com/florinmirica/HairSalon.Solution.git
+    $ git clone https://github.com/florinmirica/SuperGalacticAgeCalculator.git
 
-* Create a database using the following SQL commands:
-USE florin_mirica;
+* Install dependencies:
+    $ npm install
 
-CREATE TABLE stylists (stylist_id serial PRIMARY KEY, stylist_name VARCHAR(255));
+* Build the program:
+    $ npm run build
 
-CREATE TABLE clients (client_id serial PRIMARY KEY, client_name VARCHAR(255), stylist_id INT(11));
+* Run the program on localhost:
+    $ npm run start
 
-CREATE TABLE specialties (specialty_id serial PRIMARY KEY, specialty_name VARCHAR(255));
-
-CREATE TABLE stylists_specialties (id serial PRIMARY KEY, stylist_id INT(11), specialty_id INT(11));
-
-* Navigate to the HairSalon folder in command shell and use the following commands:
-dotnet restore
-dotnet run
+* To run tests:
+    $ npm run test
 
 ## Specifications
 
-* The website can display a list of all stylists.	Input: View website	Output: List of all stylists
-* The website allows user to select a stylist and see their clients. Input: Stylist 1 clicked; Output: Stylist 1's clients
-* The website allows user to add new stylist; Input: New Stylist; Output: List of all stylists
-* The website allows user to add new clients under a specific stylist; Input: New Client; Output: Clients of selected stylist plus the new added client
+* Take in the user's DOB and find the user's age in Earth years.
+* The program will return the user's age in Mars years. (A Mars year is 1.88 Earth years.)
+* The program will return the user's age in Mercury years. (A Mercury year is .24 Earth years.)
+* The program will return the user's age in Venus years. (A Venus year is .62 Earth years.)
+* The program will return the user's age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+* The program will calculate the user’s life expectancy on each planet using the average life expectancy on Earth.
+* The program will determines how many years a user has left to live on each planet.
+* If a user has already surpassed the average life expectancy, the program will return the number of years they have lived past their life expectancy.
+
 ## Known bugs
 
-No real styling.
 
 
 ## Support and contact details
@@ -42,8 +43,7 @@ miricaflorin@hotmail.com
 
 ## Technologies used:
 
-C#
-SQL
+* JavaScript
 
 
 Copyright (c) 2019 Florin Mirica
