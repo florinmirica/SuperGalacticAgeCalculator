@@ -1,9 +1,7 @@
-import './styles.css';
-import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Calculator from './calculator.js';
-
+import $ from "jquery";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css";
 import { UserAge } from "./galactic-logic";
 
 $(document).ready(function() {
