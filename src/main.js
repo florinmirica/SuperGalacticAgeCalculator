@@ -14,7 +14,7 @@ $(document).ready(function() {
     $("#earthLeft").text(newUser.calculateYearsLeftOnPlanet("Earth"));
     $("#mercuryAge").text(newUser.calculateAgeOnPlanet("Mercury"));
     $("#mercuryLeft").text(newUser.calculateYearsLeftOnPlanet("Mercury"));
-    $("#venusAge").text(newUser.calculateAgeOnPlanet("Mercury"));
+    $("#venusAge").text(newUser.calculateAgeOnPlanet("Venus"));
     $("#venusLeft").text(newUser.calculateYearsLeftOnPlanet("Venus"));
     $("#marsAge").text(newUser.calculateAgeOnPlanet("Mars"));
     $("#marsLeft").text(newUser.calculateYearsLeftOnPlanet("Mars"));
