@@ -32,9 +32,9 @@ export class UserAge {
         parseFloat(this.calculateAgeOnPlanet(planet))
       ).toFixed(1);
     }
-    let result = `You still have ${yearsLeftOnPlanet} years of life expectancy left on ${planet}!`;
+    let result = `You still have ${yearsLeftOnPlanet} years of fun and joy left on ${planet}!`;
     if (yearsLeftOnPlanet < 0) {
-      result = `You have lived ${Math.abs(yearsLeftOnPlanet)} years passed the life expectancy on ${planet}!`;
+      result = `You have lived ${Math.abs(yearsLeftOnPlanet)} years over the expectancy on ${planet}! You are alone!!`;
     }
     return result;
   }

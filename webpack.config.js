@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Weekday-Calculator',
+      title: 'Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
@@ -28,19 +28,11 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader?url=false'
         ]
       },
       {
-        test: /\.js$/,
-        exclude: [
-          /node_modules/,
-          /spec/
-        ],
-        loader: "eslint-loader",
-      },
-      {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: [
           /node_modules/,
           /spec/
@@ -49,6 +41,11 @@ module.exports = {
         options: {
           presets: ['es2015']
         }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ["babel-loader", "eslint-loader"]
       }
     ]
   }

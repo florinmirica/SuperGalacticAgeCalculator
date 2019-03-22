@@ -12,7 +12,7 @@ $(document).ready(function() {
     let newUser = new UserAge(DOB, lifeExpectancy);
     $("#earthAge").text(newUser.calculateEarthAgeInYears());
     $("#earthLeft").text(newUser.calculateYearsLeftOnPlanet("Earth"));
-    $("#mercuryAge").text(newUser.calculateAgeOnPlanet("Earth"));
+    $("#mercuryAge").text(newUser.calculateAgeOnPlanet("Mercury"));
     $("#mercuryLeft").text(newUser.calculateYearsLeftOnPlanet("Mercury"));
     $("#venusAge").text(newUser.calculateAgeOnPlanet("Mercury"));
     $("#venusLeft").text(newUser.calculateYearsLeftOnPlanet("Venus"));
